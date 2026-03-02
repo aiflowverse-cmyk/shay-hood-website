@@ -15,30 +15,30 @@ const translations: Record<string, Record<Language, string>> = {
   'nav.order': { ar: 'اطلب الآن', en: 'Order Now' },
   'nav.wholesale': { ar: 'مبيعات الجملة', en: 'Wholesale' },
   'nav.about': { ar: 'قصتنا', en: 'Our Story' },
-  
+
   // Hero
   'hero.headline': { ar: 'شاي أصيل، لحظات حقيقية', en: 'Authentic Tea, Real Moments' },
   'hero.subheadline': { ar: 'فرعان في الرياض — التومامة وعلي الفزاري', en: 'Two Riyadh Locations — Al Thoumamah & Ali Al Fazari' },
   'hero.cta.menu': { ar: 'تصفح المنيو', en: 'View Menu' },
   'hero.cta.order': { ar: 'اطلب توصيل', en: 'Order Delivery' },
-  
+
   // Why Us
   'why.fresh': { ar: 'شاي طازج يومياً', en: 'Fresh Tea Daily' },
   'why.locations': { ar: 'فرعان بالرياض', en: 'Two Riyadh Locations' },
   'why.rating': { ar: '4.6 نجمة من عملائنا', en: '4.6 Stars from Our Guests' },
-  
+
   // Featured Menu
   'featured.title': { ar: 'الأكثر مبيعاً', en: 'Featured Menu' },
   'featured.viewAll': { ar: 'عرض كل المنيو', en: 'View Full Menu' },
-  
+
   // Story Teaser
   'story.title': { ar: 'جذورنا', en: 'Our Roots' },
-  'story.teaser': { 
-    ar: 'اسم "هود" يحمل في طياته إرثاً عربياً عميقاً. نحن أكثر من مجرد مقهى، نحن مكان يلتقي فيه الجيران ليصبحوا عائلة. نقدم لكم كوب الشاي المثالي كطقس يومي يعكس دفء الضيافة السعودية.', 
-    en: 'The name "Hood" carries deep Arabian heritage. We are more than just a cafe; we are a place where neighbors become family. We serve the perfect cup of tea as a daily ritual reflecting the warmth of Saudi hospitality.' 
+  'story.teaser': {
+    ar: 'اسم "هود" يحمل في طياته إرثاً عربياً عميقاً. نحن أكثر من مجرد مقهى، نحن مكان يلتقي فيه الجيران ليصبحوا عائلة. نقدم لكم كوب الشاي المثالي كطقس يومي يعكس دفء الضيافة السعودية.',
+    en: 'The name "Hood" carries deep Arabian heritage. We are more than just a cafe; we are a place where neighbors become family. We serve the perfect cup of tea as a daily ritual reflecting the warmth of Saudi hospitality.'
   },
   'story.btn': { ar: 'اقرأ قصتنا', en: 'Read Our Story' },
-  
+
   // Branches
   'branches.title': { ar: 'فروعنا', en: 'Find Us' },
   'branches.b1.name': { ar: 'فرع التومامة', en: 'Al Thoumamah Branch' },
@@ -46,19 +46,19 @@ const translations: Record<string, Record<Language, string>> = {
   'branches.hours.weekdays': { ar: 'السبت - الأربعاء: ٦ ص - ١٢ ص', en: 'Sat - Wed: 6 AM - 12 AM' },
   'branches.hours.weekends': { ar: 'الخميس - الجمعة: ٦ ص - ٢ ص', en: 'Thu - Fri: 6 AM - 2 AM' },
   'branches.directions': { ar: 'الاتجاهات', en: 'Get Directions' },
-  
+
   // Reviews
   'reviews.title': { ar: 'ماذا يقول ضيوفنا', en: 'Customer Reviews' },
   'reviews.more': { ar: 'اقرأ المزيد على جوجل', en: 'Read more reviews on Google' },
-  
+
   // Instagram
   'social.title': { ar: 'شاركنا لحظاتك', en: 'Share Your Moments' },
   'social.follow': { ar: 'تابعنا على انستجرام @شايهود', en: 'Follow @ShayHood on Instagram' },
-  
+
   // Loyalty
   'loyalty.title': { ar: 'كل ١٠ كاسات، الكاس الحادية عشر مجانية', en: 'Every 10 cups, your 11th is on us' },
   'loyalty.btn': { ar: 'سجل عبر الواتساب', en: 'Join via WhatsApp' },
-  
+
   // Footer
   'footer.rights': { ar: '© 2026 شاي هود — الرياض', en: '© 2026 Shay Hood — Riyadh' },
 };
