@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Tajawal:wght@400;500;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  --font-arabic: "Tajawal", "Inter", sans-serif;
+
+  --color-sand-50: #FDFBF7;
+  --color-sand-100: #F4EFE6;
+  --color-sand-200: #E8DCC4;
+  --color-sand-300: #D5C3A1;
+  --color-gold-400: #E5B04A;
+  --color-gold-500: #D99B29;
+  --color-gold-600: #B87F1C;
+  --color-brown-700: #6A4B3A;
+  --color-brown-800: #4A3022;
+  --color-brown-900: #2C1E16;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-sand-100 text-brown-900 antialiased;
+    line-height: 1.6;
+  }
+  
+  html[dir="rtl"] body {
+    font-family: var(--font-arabic);
+  }
+  
+  html[dir="ltr"] body {
+    font-family: var(--font-sans);
+  }
+
+  html[dir="ltr"] h1, 
+  html[dir="ltr"] h2, 
+  html[dir="ltr"] h3, 
+  html[dir="ltr"] h4, 
+  html[dir="ltr"] h5, 
+  html[dir="ltr"] h6 {
+    font-family: var(--font-serif);
+  }
+
+  /* ✅ SKILL: Visible focus states for keyboard navigation */
+  :focus-visible {
+    outline: 2px solid #D99B29;
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  /* ✅ SKILL: cursor-pointer on all interactive elements */
+  button, a, [role="button"] {
+    cursor: pointer;
+  }
+
+  /* ✅ SKILL: Readable minimum font size */
+  p, li, span {
+    font-size: max(16px, 1rem);
+  }
+
+  /* ✅ SKILL: prefers-reduced-motion — disable animations for users who request it */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* Hide scrollbar for horizontal scrolling areas */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
